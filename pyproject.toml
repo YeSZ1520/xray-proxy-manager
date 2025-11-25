@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xray-proxy-manager"
+version = "0.1.0"
+description = "A simple Python proxy module that manages Xray core process."
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+  {name = "YeSZ1520", email = "yesz152081@gmail.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "loguru",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/YeSZ1520/xray-proxy-manager"
+"Bug Tracker" = "https://github.com/YeSZ1520/xray-proxy-manager/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+# No static files included by default
